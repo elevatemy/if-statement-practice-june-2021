@@ -1,8 +1,8 @@
-puts("Hey, enter your age: ")
-age = gets.chomp # you always get a String
+puts('Are you leaving your house? (type "yes" or "no"): ')
+answer = gets.chomp
 
-if age.to_i < 21
-  puts('You cannot be an MP')
+if answer.downcase == 'yes'
+  puts('Lock the door')
 else
-  puts('You can be an MP')
+  puts('Life goes on')
 end
